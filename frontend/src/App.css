@@ -28,6 +28,101 @@
   color: #61dafb;
 }
 
+.App-nav {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.App-nav a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.App-nav a:hover {
+  text-decoration: underline;
+}
+
+.App-content {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: left;
+}
+
+.job-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.job-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.job-company,
+.job-location {
+  margin: 0.25rem 0;
+  color: #444;
+}
+
+.button-link,
+.button-primary {
+  display: inline-block;
+  margin-top: 0.75rem;
+  background: #61dafb;
+  color: #0b1320;
+  padding: 0.5rem 0.85rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button-primary:hover,
+.button-link:hover {
+  opacity: 0.9;
+}
+
+.job-form {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.job-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.job-form input,
+.job-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.job-form textarea {
+  min-height: 140px;
+}
+
+.job-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.job-delete {
+  background: #ff6b6b;
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

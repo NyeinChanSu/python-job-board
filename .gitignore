@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+jobs.db
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Editor
+.vscode/
+.DS_Store
